@@ -1,50 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" data-theme="burntlight">
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Required: meta description -->
-    <meta name="description" content="Ibraheem Moin — personal website showcasing projects, resume highlights, and contact links." />
-    <title>Ibraheem Moin — Personal Site</title>
+    <meta name="description"
+        content="Ibraheem Moin — UT Austin ECE student. Embedded systems, controls, and digital design projects with internship experience at Burns & McDonnell and NexTek Services." />
+    <title>Ibraheem Moin — Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css" />
-  </head>
-  <body>
-    <!-- Section 1 -->
-    <div id="hero" class="section">
-      <header>
-        <img class="avatar" src="assets/profile.jpg" alt="Headshot of Ibraheem Moin" />
-        <h1 class="brand">Ibraheem Moin</h1>
-        <p class="subtitle">Embedded Systems • Controls • Web</p>
-        <!-- Required: external link -->
-        <p class="cta">
-          <a class="btn" href="https://github.com/ibraheemmoin" target="_blank" rel="noopener">Visit my GitHub</a>
-        </p>
-      </header>
-    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMD/CDF1xBlB+K2dPfG6G/g02u3z63l5x6B2GkGk0d5z5e5c5q5Q5g5f5o5a5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-    <!-- Section 2 -->
-    <div class="section">
-      <h2 class="section-title">Projects</h2>
+<body>
+    <header id="hero">
+        <div class="hero-main">
+            <img class="avatar" src="profile.jpg" alt="Headshot of Ibraheem Moin" />
+            <h1 class="brand">Ibraheem Moin</h1>
+            <p class="subtitle">UT Austin — Electrical & Computer Engineering (BS ’27)</p>
+            <p class="summary">Embedded Systems & Controls focus with internship experience in both high-level controls and
+                low-level embedded engineering. Committed to building efficient, reliable systems.</p>
 
-      <!-- Required: class used ≥2x (.card) -->
-      <article class="card">
-        <h3>RTOS Weather Station</h3>
-        <p>FreeRTOS tasks for sensing, display, and logging; I²C drivers and cooperative scheduling.</p>
-      </article>
+            <a class="btn primary-btn" href="mailto:ibraheem.moin99@gmail.com">
+                <i class="fa-solid fa-envelope"></i> Contact Me
+            </a>
+            <a class="btn" href="Ibraheem.Moin.Resume.pdf" target="_blank">
+                <i class="fa-solid fa-file-pdf"></i> View Résumé
+            </a>
+        </div>
+        <div class="hero-contact">
+            <a class="chip" href="mailto:ibraheem.moin99@gmail.com">
+                <i class="fa-solid fa-envelope"></i> ibraheem.moin99@gmail.com
+            </a>
+            <a class="chip" href="https://linkedin.com/in/ibraheemmoin" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin"></i> in/ibraheemmoin
+            </a>
+            <a class="chip" href="https://github.com/ibraheemmoin" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> github/ibraheemmoin
+            </a>
+            <span class="chip">
+                <i class="fa-solid fa-location-dot"></i> Austin, TX
+            </span>
+            <span class="chip">
+                <i class="fa-solid fa-flag-usa"></i> U.S. Citizen
+            </span>
+        </div>
+    </header>
 
-      <article class="card">
-        <h3>RFID Keypad Door Lock</h3>
-        <p>Arduino + RC522 with AES-based messaging; LCD + buzzer feedback; designed for home use.</p>
-      </article>
+    <main class="container">
+        <section>
+            <h2 class="section-title">Education</h2>
+            <div class="card wide-card">
+                <h3>The University of Texas at Austin, Cockrell School of Engineering</h3>
+                <p class="meta">Bachelor of Science, Electrical and Computer Engineering — <strong>May 2027</strong> | GPA:
+                    <strong>3.8 / 4.0</strong></p>
+                <p class="meta">
+                    <strong>Focus:</strong> Embedded Systems, Controls, and Digital Design
+                </p>
+                <div class="tag-group">
+                    <span class="tag">Computer Architecture</span>
+                    <span class="tag">Embedded Systems Design Lab</span>
+                    <span class="tag">Digital System Design (HDL)</span>
+                    <span class="tag">Data Structures &amp; Algorithms</span>
+                    <span class="tag">Linear Systems and Signals</span>
+                </div>
+            </div>
+        </section>
 
-      <article class="card">
-        <h3>Car Wash Ops Dashboard</h3>
-        <p>Operational KPIs & chemical usage optimization; reduced cost by 12% while improving sustainability.</p>
-      </article>
-    </div>
+        <section>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="card skills-grid">
+                <div>
+                    <h3>Programming & HDL</h3>
+                    <p>C, C++, Python, Java, Verilog, ARM Assembly</p>
+                </div>
+                <div>
+                    <h3>Embedded & Protocols</h3>
+                    <p>FreeRTOS, JTAG, I²C, SPI, UART, USB, GPIO, DMA, Timers, PWM</p>
+                </div>
+                <div>
+                    <h3>Hardware & Tools</h3>
+                    <p>STM32 (F4), TI MSPM0/TM4C, Arduino, Basys3, KiCad, Vivado, Git/GitHub</p>
+                </div>
+            </div>
+            <div class="tag-group large-tags" aria-hidden="true">
+                <span class="tag primary">FreeRTOS</span>
+                <span class="tag primary">STM32</span>
+                <span class="tag">Verilog</span>
+                <span class="tag">KiCad</span>
+                <span class="tag">Vivado</span>
+                <span class="tag">C/C++</span>
+                <span class="tag">I²C/SPI/UART</span>
+            </div>
+        </section>
 
-    <footer class="section">
-      <p>© <span id="year">2025</span> Ibraheem Moin — <a href="mailto:ibraheem@example.com">Email me</a></p>
+        <div class="grid-section">
+            <section>
+                <h2 class="section-title">Experience</h2>
+                <div class="card experience-card">
+                    <h3>Burns &amp; McDonnell — Controls Engineering Intern</h3>
+                    <p class="meta">Houston, TX • May 2025 – Aug 2025</p>
+                    <ul>
+                        <li>Validated and reviewed <strong>650+</strong> control loops and SIS logic on P&amp;IDs with
+                            cause-and-effect matrices.</li>
+                        <li>Parsed P&amp;IDs/PFDs to input and verify <strong>6,000+</strong> instrument data records in
+                            SmartPlant Instrumentation.</li>
+                        <li>Assessed field instrumentation via vendor datasheets to ensure compliance with client and
+                            operational standards.</li>
+                    </ul>
+                </div>
+                <div class="card experience-card">
+                    <h3>NexTek Services — Embedded Engineer Intern</h3>
+                    <p class="meta">Houston, TX • May 2024 – Aug 2024</p>
+                    <ul>
+                        <li>Developed C/C++ firmware on Arduino Uno integrating RFID reader, keypad, LCD, and lock.</li>
+                        <li>Implemented a non-blocking state machine cutting input latency to <strong>&lt;5 ms</strong>;
+                            UART used for debugging.</li>
+                        <li>Built a simple HMI on I²C LCD for status/error prompts and added buzzer alerts.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Projects</h2>
+                <div class="card project-card">
+                    <h3>RTOS Embedded Sensor &amp; LED System</h3>
+                    <p class="meta">C, FreeRTOS, STM32, I²C/SPI</p>
+                    <ul>
+                        <li>Integrated BMP280 + PIR; updated I²C LCD; drove WS2812B LEDs by synthesizing 800 kHz waveform
+                            via SPI.</li>
+                        <li>Wrote C drivers and FreeRTOS tasks with mutexes and EXTI interrupt for responsive motion/display/LED updates.</li>
+                    </ul>
+                </div>
+                <div class="card project-card">
+                    <h3>Embedded Systems Pac-Man Game</h3>
+                    <p class="meta">C/C++, ARM Cortex-M, PCB, ADC/DAC</p>
+                    <ul>
+                        <li>Recreated Pac-Man on ARM MCU with custom PCB: ST7735 LCD (SPI), buttons (GPIO), slider (ADC),
+                            speaker (DAC).</li>
+                        <li>Built a C++ FSM architecture, tile renderer, collision detection, and path-finding.</li>
+                    </ul>
+                </div>
+                <div class="card project-card">
+                    <h3>LC-3b Architecture Simulator</h3>
+                    <p class="meta">C, RTL Concepts, Pipelining, Python</p>
+                    <ul>
+                        <li>Cycle-accurate LC-3b simulator with microcoded control store and 5-stage pipeline.</li>
+                        <li>Implemented hazard detection, branch prediction, and data forwarding; validated with Python
+                            tests.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Ibraheem Moin | Built with modern HTML/CSS</p>
     </footer>
-  </body>
+</body>
+
 </html>
